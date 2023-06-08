@@ -3,7 +3,7 @@ import { ResponsivePie } from "@nivo/pie";
 import { Box, Typography, useTheme } from "@mui/material";
 import { useGetSalesQuery } from "../state/api";
 
-const BreakdownChart = ({ isDashboard = false }) => {
+const BreakdownChart = ({ isDashboard = true }) => {
   const { data, isLoading } = useGetSalesQuery();
   const theme = useTheme();
 
